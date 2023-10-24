@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="todoApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>DevClub - Todo list</title>
+</head>
+
+<body ng-controller="TodoController">
+    <div class="containerr">
+        <div class="container-1">
+            <h1>Sua todolist é como um mapa para o seu dia. 
+              <br> Planeje com sabedoria, siga o caminho e alcance suas metas.
+            </h1>
+        
+            <input class="input-task" ng-model="newTask" placeholder="O que tenho que fazer...">
+            <button class="button-add-task" ng-click="addTask()">Adicionar</button>
+
+            <ul class="list-tasks">
+                <li class="teste" ng-repeat="task in tasks track by $index" ng-class="{ 'done': task.concluida }">
+                    <img src="Iimg/checked.png" alt="check-na-tarefa" ng-click="completeTask($index)">
+                    <p>{{ task.tarefa }}</p>
+                    <img src="Iimg/trash.png" alt="tarefa-para-o-lixo" ng-click="deleteTask($index)">
+                </li>
+            </ul>
+            
+            </ul>
+        </div>
+    </div>
+</body>
+
+<!-- Incluímos o AngularJS e o script personalizado aqui -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="script.js"></script>
+</html>

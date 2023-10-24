@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Prompt&family=Source+Sans+3:wght@500;800&family=Work+Sans:wght@800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    outline: none;
+}
+
+body {
+   background: url(Iimg/12.avif);
+    background-size: cover;
+}
+
+.containerr {
+    background: rgba(255, 255, 255, 0.2); /* Cor branca transparente com mais transparência */
+    width: 500px;
+    border-radius: 10px;
+    padding: 1px;
+    margin: 50px auto 0;
+    backdrop-filter: blur(10px); /* Adicione um efeito de desfoque */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3); /* Adicione uma sombra suave com mais opacidade */
+    transform: translateZ(30px); /* Adicione um efeito 3D de deslocamento */
+    transition: background 0.3s ease-in-out; /* Adicione uma transição suave para a cor de fundo */
+    text-align: center; /* Centralize o texto dentro da .containerr */
+    display: flex; /* Use display: flex para centralizar verticalmente */
+    flex-direction: column; /* Alinhe os elementos verticalmente */
+    justify-content: center; /* Centralize verticalmente */
+    align-items: center; /* Centralize horizontalmente */
+}
+
+.container-1 {
+    margin: 34px 50px;
+    padding: 10px;
+    width: 500px;
+}
+
+h1 {
+
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow:
+        0 0 10px 	gray,
+        0 0 20px 	gray,
+        0 0 30px	gray,
+        0 0 40px 	gray,
+        0 0 50px    gray;
+    animation: blink 6s infinite;
+    font-family: 'Prompt', sans-serif;
+   
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.containerr {
+    background: rgba(255, 255, 255, 0.2); /* Cor branca transparente com mais transparência */
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+    backdrop-filter: blur(10px); /* Adicione um efeito de desfoque */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3); /* Adicione uma sombra suave com mais opacidade */
+    transform: translateZ(30px); /* Adicione um efeito 3D de deslocamento */
+    transition: background 0.3s ease-in-out; /* Adicione uma transição suave para a cor de fundo */
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.4); /* Cor branca com mais transparência ao passar o mouse */
+    transform: translateZ(40px); /* Aumente o efeito 3D ao passar o mouse */
+}
+
+.input-task {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.button-add-task {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #9932CC	;
+    color: #ffff;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+}
+
+.button-add-task:active {
+    opacity: 0.4;
+}
+
+.button-add-task:hover {
+    opacity: 0.8;
+}
+.task {
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.task:hover img {
+    opacity: 1;
+}
+.list-tasks {
+    list-style: none;
+    display: inline;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.teste{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffff;
+
+
+}
+
+.list-tasks .teste {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    
+
+}
+
+.list-tasks img {
+    margin: 10px;
+    width: 30px;
+    opacity: 1;
+    transition: opacity 0.10s ease-in-out;
+
+}
+
+.task:hover img {
+    opacity: 5;
+}
+
+.done{
+    margin-top: 10px;  
+    border-radius: 8px;
+    background-color: #9932CC;
+    text-decoration: line-through;
+}
